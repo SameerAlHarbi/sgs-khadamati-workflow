@@ -1,0 +1,19 @@
+{
+  "name": "sgs-khadamati-workflow",
+  "version": "1.0.0",
+  "description": "Dynamic workflow for sgs khadamati",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sameer Al Harbi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@tsconfig/node17": "^1.0.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.23"
+  }
+}
