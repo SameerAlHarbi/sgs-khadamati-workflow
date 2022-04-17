@@ -2,13 +2,15 @@
   "name": "sgs-khadamati-workflow",
   "version": "1.0.0",
   "description": "Dynamic workflow for sgs khadamati",
-  "main": "index.js",
+  "main": "dist/index",
+  "typings": "dist/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sameer Al Harbi",
   "license": "ISC",
   "dependencies": {
+    "@abujude/sgs-khadamati": "^1.4.2",
     "chalk": "^5.0.1",
     "express": "^4.17.3"
   },
