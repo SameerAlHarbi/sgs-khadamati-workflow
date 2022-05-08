@@ -1,11 +1,10 @@
 import express from "express";
-const { queryMiddleware } = require("@abujude/sgs-khadamati");
+// const { queryMiddleware } = require("@abujude/sgs-khadamati");
 // import errorsController from "./controllers/errors.controller";
-import HttpCustomError from './util/httpCustomError';
-import ErrorsMiddleware from './middlewares/errors.middleware';
+import HttpCustomError from "./util/httpCustomError";
+import ErrorsMiddleware from "./middlewares/errors.middleware";
 export default class App {
-
-  public expressApp : express.Application;
+  public expressApp: express.Application;
 
   constructor() {
     this.expressApp = express();
@@ -16,13 +15,13 @@ export default class App {
 
   initializeMiddlewares() {
     this.expressApp.use(express.json());
-    this.expressApp.use(queryMiddleware.setLanguage())
+    // this.expressApp.use(queryMiddleware.setLanguage())
 
-    this.expressApp.use(new ErrorsMiddleware().errorResponse)
+    this.expressApp.use(new ErrorsMiddleware().errorResponse);
   }
 
   initializeControllers() {
-    
+    console.log("ok");
   }
 }
 
